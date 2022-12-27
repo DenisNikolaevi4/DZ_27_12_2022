@@ -5,13 +5,12 @@
 
 Console.WriteLine("Введите число ");
 int number = Convert.ToInt32(Console.ReadLine());
-int num_cub;
-int index=1;
-while (index<=number)
+int numCub;
+int index = 1;
+while (index <= number)
 {
-    num_cub=index*index*index;
+    numCub = (int)(Math.Pow((double) index, (double) 3));
+        Console.WriteLine($"Куб числа {index} -> {numCub}");
     index++;
-    Console.WriteLine($"Куб числа {index-1} -> {num_cub}");
-
 }
 
