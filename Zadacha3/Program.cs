@@ -18,6 +18,6 @@ for (index_2 = 0; index_2 < 3; index_2++)
 {
     dotB[index_2] = Convert.ToDouble(Console.ReadLine());
 }
-double distance = Math.Sqrt ((dotA[0] - dotB[0]) * (dotA[0] - dotB[0]) +(dotA[1] - dotB[1])*(dotA[1] - dotB[1]) +(dotA[2] - dotB[2])*(dotA[2] - dotB[2]));
+double distance = Math.Round(Math.Sqrt((Math.Pow((dotA[0] - dotB[0]), 2)) + (Math.Pow((dotA[1] - dotB[1]), 2)) + (Math.Pow((dotA[2] - dotB[2]), 2))), 2);
 
 System.Console.WriteLine(distance);
